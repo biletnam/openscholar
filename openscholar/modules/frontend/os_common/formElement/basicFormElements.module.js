@@ -1,6 +1,6 @@
 (function () {
 
-  var m = angular.module('basicFormElements', ['osHelpers', 'ngSanitize', 'EntityService']);
+  var m = angular.module('basicFormElements', ['osHelpers', 'ngSanitize']);
 
   /**
    * SelectOptGroup directive.
@@ -433,7 +433,7 @@
 
   }]);
 
-  m.directive('feOgVocabComplex', ['EntityService', function (EntityService) {
+  m.directive('feOgVocabComplex', [function () {
 
     return {
       restrict: 'A',
